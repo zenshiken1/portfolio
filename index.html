@@ -1,154 +1,94 @@
 <!DOCTYPE html>
-<html lang="jp">
-    <head>
-        <met#aeb3b8et="utf-8">
-        <title>Portfolio</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-
-    <body>
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-2 sticky-lg-top vh-100">
-                    <div class="d-flex flex-column h-100 text-center overflow-auto shadow">
-                        <img class="w-100 img-fluid mb-4" src="img/1.JPG" alt="Image">
-                        <h3 class="text-primary mt-2">単 詩軒<br>Zen Shiken</h3>
-                        <h3><a href="https://forms.gle/YMM63rw8KTL7VpHm6" target="_blank" class="link" style="color:white;">問い合わせ</a></h3>
-                        <footer>©︎2023 Shiken Zen</footer>
-                        <div class="d-flex align-items-end justify-content-between border-top">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-
-                    <nav>
-                        <ul class="menu">
-                            <li class="menu"><a href="#about">About</a></li>
-                            <li class="menu"><a href="#skill">Skill</a></li>
-                            <li class="menu"><a href="#Field">Field</a></li>
-                            <li class="menu"><a href="#works">Works</a></li>
-                        </ul>
-                    </nav>
-
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5" id="about">基本情報</h1>
-                        <div class="row mb-4">
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Name:</span> 単 詩軒/Shiken Zen
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">趣味:</span> プログラミング、ゲーム、競馬
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                武蔵野大学データサイエンス学部 3年
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">目標:</span> みんなが使いたいと思われるものを開発する
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                2025年3月卒業予定
-                            </div>
-                            <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Email:</span> s2122031@stu.musashino-u.ac.jp
-                            </div>
-                        </div>
-
-                    </section>
-
-                    
-
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5" id="skill">Skills</h1>
-                        <div class="container">
-                            <div class="row skills">
-                                <div class="row">
-                                    <div class="col-sm-6 col-sm-offset-3">
-                                        <div class="pfblock-header wow fadeInUp">
-                                            <div class="pfblock-line"></div>
-                                            <div class="pfblock-subtitle">(全部勉強中ですが、一応把握順)</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-6 col-sm-4 col-md-2 text-center">
-                                    <b>Python</b>
-                                </div>
-                                <div class="col-xs-6 col-sm-4 col-md-2 text-center">
-                                    <b>HTML/CSS</b>
-                                </div>
-                                <div class="col-xs-6 col-sm-4 col-md-2 text-center">
-                                    <b>PHP</b>
-                                </div>
-                                <div class="col-xs-6 col-sm-4 col-md-2 text-center">
-                                    <b>SQL</b>
-                                </div>
-                                <div class="col-xs-6 col-sm-4 col-md-2 text-center">
-                                    <b>JavaScript</b>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>単 詩軒 | ポートフォリオ</title>
+<meta name="description" content="単 詩軒（Zen）— 武蔵野大学大学院データサイエンス研究科。AI×行動分析／仮想空間のユーザプロファイリング研究。就職活動向けポートフォリオ。" />
+<meta name="theme-color" content="#0ea5e9">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/style.css">
+<script defer src="assets/app.js"></script>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Person",
+"name": "単 詩軒",
+"email": "mailto:g2550006@stu.musashino-u.ac.jp",
+"telephone": "+81-70-3348-0525",
+"affiliation": {"@type": "CollegeOrUniversity", "name": "武蔵野大学大学院 データサイエンス研究科"},
+"knowsAbout": ["データサイエンス", "AI", "WebRTC", "仮想空間", "インフラ"],
+"url": ""
+}
+</script>
+</head>
+<body>
+<header class="site-header">
+<div class="container">
+<nav class="nav">
+<div class="brand">
+<span class="tag"></span>
+<strong>単 詩軒</strong>
+</div>
+<div class="nav-links">
+<!-- ====== ナビゲーション ====== -->
+<a href="#about">自己紹介</a>
+<a href="#research">研究</a>
+<a href="#works">制作・発表</a>
+<a href="#skills">スキル</a>
+<a href="#history">学歴</a>
+<a class="btn" href="#contact">連絡</a>
+</div>
+</nav>
+</div>
+</header>
 
 
-                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="title pb-3 mb-5" id="works">WORK                        </h1>
-                    <ol>
-                        <li>AIテクノロジ</li>
-                        <img src="img/work1.jpg" alt="work1" class="set_auto2">
-                        <img src="img/work1-1.jpg" alt="work1-1" class="set_auto2">
-                        <h4>自分が旅行したいところの最短経路を計算する</h4>
-                        <p>データベースに書いてあった自分の旅行したいところを地域検索機能とそれらを全部回す時の最短距離をGAで計算する</p>
-                        <ul>
-                            <li>python</li>
-                            <li>flask</li>
-                            <li>html</li>
-                            <li>sql</li>
-                        </ul>
-                        <li>未来創造-I</li>
-                        <div class="g-slide">
-                            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT4eul9ZrvIdMC8NpT4jR4Q0J2LEFbCDhp8D2FK0Vxuvoaocc2CWf-GmokN8kDRPG5nJ0mLqWTsbGSr/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                        </div>
-                        <h4>競馬用位置情報持ちSNS</h4>
-                        <ul>
-                            <li>php</li>
-                            <li>html</li>
-                            <li>sql</li>
-                        </ul>
-                        <li>未来創造-II</li>
-                        <img src="img/work3.jpg" alt="work3" class="set_auto">
-                        <h4>GPS日記</h4>
-                        <a href="https://gms.gdl.jp/~zenshiken/memo/login.html" target="_blank" class="link">リンクはこちら</a>
-                        <ul>
-                            <li>php</li>
-                            <li>html</li>
-                            <li>sql</li>
-                        </ul>
-                    </ol>
-                </div>
-            </div>
-        </div>
-        
-        
+<main class="container">
+<!-- ====== HERO: 極力シンプルな自己紹介カード群 ====== -->
+<section class="hero-min" id="about">
+<div class="cards grid-min">
+<div class="mini-card"><h3>名前</h3><p>単 詩軒（ゼン シケン）</p></div>
+<div class="mini-card"><h3>所属</h3><p>武蔵野大学大学院<br>データサイエンス研究科（修士1年）</p></div>
+<div class="mini-card"><h3>研究</h3><p>仮想空間のユーザ行動分析と<br>プロファイリングAI</p></div>
+<div class="mini-card"><h3>強み</h3><p>未知を自走で学ぶ力／やり切る実行力</p></div>
+<div class="mini-card"><h3>趣味</h3><p>ゲーム／アニメ</p></div>
+<div class="mini-card"><h3>目標</h3><p>人や現場に役立つAI・データ活用</p></div>
+<div class="mini-card"><h3>言語</h3><p>日本語N1／中国語／英語</p></div>
+<div class="mini-card"><h3>強み</h3><p>粘り強くやり切る実行力／責任感</p></div>
+<div class="mini-card"><h3>弱み</h3><p>時間管理は改善中（タスク管理で対応）</p></div>
 
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/typed/typed.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/isotope/isotope.pkgd.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+
+
+<!-- ====== 学歴 ====== -->
+<section id="history">
+<h2>学歴</h2>
+<div class="timeline">
+<div class="item"><strong>2027年3月 卒業見込み</strong> — 武蔵野大学大学院 データサイエンス研究科 修士課程</div>
+<div class="item">2025年3月 — 武蔵野大学 データサイエンス学部 卒業</div>
+<div class="item">2021年4月 — 武蔵野大学 データサイエンス学部 入学</div>
+<div class="item">2019年10月 — 早稲田言語学校 入学 / 2021年3月 卒業</div>
+<div class="item">2018年6月 — 周口市第一高級中学 卒業</div>
+</div>
+</section>
+
+
+<!-- ====== 連絡：Googleフォームに遷移 ====== -->
+<section id="contact">
+<h2>連絡</h2>
+<p class="note">お問い合わせは以下のボタンからフォームへお進みください。</p>
+<a class="btn lg" id="contact-btn" href="https://forms.gle/XXXXXXXX" target="_blank" rel="noopener">お問い合わせフォームへ</a>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">
+<div class="foot">
+<span>© <span id="y"></span> 単 詩軒</span>
+</div>
+</div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
 </html>
